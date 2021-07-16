@@ -1,0 +1,3 @@
+<div class="msg-connecting">
+	Sambungan ke server e-Quickstart sedang dalam proses...
+</div>

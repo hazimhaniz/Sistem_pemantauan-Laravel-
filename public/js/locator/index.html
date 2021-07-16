@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <title>demo</title>
+    <script>
+        function exec_setTimeout() {
+            setTimeout("alert('JS setTimeout demo!')", 2000);
+        }
+    </script>
+    <script src="./jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+<h1>Borang </h1>
+Latitud: <input type="text" name="latitude" id="latitude"/>
+<br>
+Longitud: <input type="text" name="longitude" id="longitude"/>
+<br>
+Nama Negeri (Kod): <input type="text" name="state" id="namaNegeri_KOD_NEGERI"/>
+<br>
+Nama Negeri (Nama):<input type="text" name="state" id="namaNegeri_NAM"/>
+<br>
+Bahagian Sarawak (Kod): <input type="text" name="bhgSrwk" id="bhgnSarawak_KOD_BAHAGI"/>
+<br>
+Bahagian Sarawak (Nama): <input type="text" name="bhgSrwk" id="bhgnSarawak_NAM"/>
+<br>
+Land District Sarawak (Kod): <input type="text" name="drhKclSrwk" id="daerahKecilSarawak_KOD_L_DIST"/>
+<br>
+Land District Sarawak (Nama): <input type="text" name="drhKclSrwk" id="daerahKecilSarawak_NAM"/>
+<br>
+Daerah (Kod):  <input type="text" name="daerah" id="daerah_KOD_DAERAH"/>
+<br>
+Daerah (Nama): <input type="text" name="daerah" id="daerah_NAM"/>
+<br>
+Mukim (Kod):  <input type="text" name="mukim" id="mukim_KOD_NEGERI"/>
+<br>
+Mukim (Nama): <input type="text" name="mukim" id="mukim_NAM"/>
+<br>
+DUN (Kod):  <input type="text" name="dun" id="dun_KOD"/>
+<br>
+DUN (Nama):  <input type="text" name="dun" id="dun_DUN"/>
+<br>
+Parlimen (Kod): <input type="text" name="parlimen" id="parlimen_KOD_PAR"/>
+<br>
+Parlimen (Nama):  <input type="text" name="parlimen" id="parlimen_PARLIMEN"/>
+<br>
+Lembangan (Kod):  <input type="text" name="lembangan" id="lembangan_WKA"/>
+<br>
+Lembangan (Nama):  <input type="text" name="lembangan" id="lembangan_RB_Name"/>
+<br>
+<br>
+
+EKAS
+<br>
+Nama Premis :  <input type="text" name="NamaPremis" id="simpas_namapremis"/>
+<br>
+Alamat Premis:  <input type="text" name="AlamatPremis" id="simpas_alamat"/>
+<br>
+<br>
+
+EIA
+<br>
+Status Projek :  <input type="text" name="StatusProjek" id="projekEia_STATUS"/>
+<br>
+
+<button id="geobutton">
+    Cari
+</button>
+<script src="./app.js"></script>
+
+</body>
+
+</html>

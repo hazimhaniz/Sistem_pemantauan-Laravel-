@@ -1,0 +1,50 @@
+php artisan iseed jas_fail --force && 
+php artisan iseed jas_fail_detail --force && 
+php artisan iseed jas_fail_detail_aktiviti --force && 
+php artisan iseed master_activity_type --force && 
+php artisan iseed master_aktiviti --force && 
+php artisan iseed master_city --force && 
+php artisan iseed master_district --force && 
+php artisan iseed master_elemen_pemeriksaan --force && 
+php artisan iseed master_faq_type --force && 
+php artisan iseed master_filing_status --force && 
+php artisan iseed master_holiday_type --force && 
+php artisan iseed master_inbox_status --force && 
+php artisan iseed master_jenis_projek --force && 
+php artisan iseed master_kod_bmp --force && 
+php artisan iseed master_module --force && 
+php artisan iseed master_month --force && 
+php artisan iseed master_parameter --force && 
+php artisan iseed master_pematuhan_eia --force && 
+php artisan iseed master_pengawasan --force && 
+php artisan iseed master_peringkat_pengawasan --force && 
+php artisan iseed master_place_state --force && 
+php artisan iseed master_postcode --force && 
+php artisan iseed master_project_activity --force && 
+php artisan iseed master_province_office --force && 
+php artisan iseed master_runningno --force && 
+php artisan iseed master_standard --force && 
+php artisan iseed master_state --force && 
+php artisan iseed master_sungai --force && 
+php artisan iseed master_tempoh_audit --force && 
+php artisan iseed master_user_status --force && 
+php artisan iseed master_user_type --force && 
+php artisan iseed model_has_permission --force && 
+php artisan iseed model_has_role --force && 
+php artisan iseed notification --force && 
+php artisan iseed permission --force && 
+php artisan iseed role --force && 
+php artisan iseed setting --force && 
+php artisan iseed user --force &&
+php artisan iseed master_bmp --force && 
+php artisan iseed master_bmp_pematuhan --force
+
+
+
+
+
+
+php artisan krlove:generate:model User --table-name=user
+php artisan krlove:generate:model LaporanPermakahanFinal --table-name=laporan_permakahan_final
+php artisan krlove:generate:model LaporanSiasatanFinal --table-name=laporan_siasatan_final
+php artisan krlove:generate:model MasterElemenPemeriksaan --table-name=master_elemen_pemeriksaan

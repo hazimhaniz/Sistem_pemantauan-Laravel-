@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'language_my' => 'Bahasa Melayu',
+    'language_en' => 'Bahasa Inggeris',
+    'inbox' => 'Peti',
+    'profile' => 'Profil',
+    'logout' => 'Log Keluar',
+    'welcome' => 'Selamat Datang',
+    'last_logged_at' => 'Masa log masuk terakhir adalah',
+    'review' => 'Semakan',
+    'application_status' => 'Status Permohonan',
+    'display' => 'Paparan',
+    'announcement' => 'Pengumuman',
+    'no_announcement_has_been_made' => 'Tiada sebarang pengumuman',
+    'all_rights_reserved' => 'Hakcipta Terpelihara',
+    'ministry_of_foreign_affairs' => 'Kementerian Luar Negeri',
+    'no' => 'Bil',
+    'modules' => 'Modul',
+    'form' => 'Borang',
+    'application_date' => 'Tarikh Permohonan',
+    'showing' => 'Paparan',
+    'to' => 'hingga',
+    'from' => 'dari',
+    'record' => 'rekod',
+    'no_data' => 'Tiada data',
+];

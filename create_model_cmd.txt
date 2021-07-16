@@ -1,0 +1,11 @@
+
+
+php artisan krlove:generate:model JASFail --table-name=jas_fail
+php artisan krlove:generate:model Distribution --table-name=distribution
+php artisan krlove:generate:model Projek --table-name=projek
+
+php artisan krlove:generate:model ProjekHasPp --table-name=projek_has_pp
+php artisan krlove:generate:model ProjekPengawasan --table-name=projek_pengawasan
+
+projek_pengawasan
+distribution

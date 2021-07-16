@@ -1,0 +1,82 @@
+<li class="m-t-30 {{ request()->is('home*') ? 'active' : '' }}">
+	<a class="" href="{{ route('home') }}">
+		<span class="title">Laman Utama</span>
+	</a>
+</li>
+<!-- 
+<li class="">
+	<a href="{{ route('rekodEkas.senarai') }}">Senarai Rekod EKAS</a>
+</li> -->
+
+<!-- <li class="">
+	<a href="javascript:;">
+		<span class="title">Pengurusan Pengguna</span>
+		<span class="arrow"></span>
+	</a>
+	<ul class="sub-menu">
+		<li class="menu-inner-custom">
+			<a href="{{ route('user.internal') }}">Pengguna Dalaman</a>
+		</li>
+		<li class="menu-inner-custom">
+			<a href="{{ route('user.external') }}">Pengguna Luar</a>
+		</li>
+	</ul>
+</li>
+ -->
+@include('layouts.menu.external_user')
+
+<!-- <li class="">
+	<a href="javascript:;">
+		<span class="title">Pengurusan Projek</span>
+		<span class="arrow"></span>
+	</a>
+	<ul class="sub-menu">
+		<li class="">
+			<a href="{{ route('pengesahanprojek.belumhantar') }}">Belum Dihantar</a>
+		</li>
+		<li class="">
+			<a href="{{ route('pengesahanprojek.belumsah') }}">Belum Disahkan</a>
+		</li>
+		<li class="">
+			<a href="{{ route('pengesahanprojek.sah') }}">Telah Disahkan</a>
+		</li>
+	</ul>
+</li> -->
+
+
+
+@include('layouts.menu.admin')
+
+@if(auth()->user()->hasAnyRole(['pengguna_luar']))
+	{{-- @include('layouts.menu.external_user') --}}
+@endif
+
+@if(auth()->user()->hasAnyRole(['admin']))
+	{{-- @include('layouts.menu.admin') --}}
+@endif
+
+@if(auth()->user()->hasAnyRole(['superadmin']))
+	{{-- @include('layouts.menu.superadmin') --}}
+@endif
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var selectedUrl = "{{ Request::url() }}";
+		var selectedMenu = $('a[href="'+ selectedUrl +'"]');
+
+		if(selectedMenu)
+		{
+			var parentLI = selectedMenu.parent('li');
+			if(parentLI)
+			{
+				parentLI.addClass('open active');
+				var parentUL = parentLI.parents('ul');
+				// if(parentUL)
+				// {
+				// 	parentUL.addClass('open active');
+				// 	parentUL.trigger('click');
+				// }
+			}
+		}
+	});
+</script>
